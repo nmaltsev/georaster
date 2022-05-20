@@ -19,7 +19,8 @@
     "build": "npm run build:prod",
     "build:prod": "npm run build:prod:node && npm run build:prod:web",
     "build:prod:node": "webpack --mode production --target node",
-    "build:prod:web": "webpack --mode production --target web"
+    "build:prod:web": "webpack --mode production --target web",
+    "build:dev:web": "webpack --mode development --target web"
   },
   "repository": {
     "type": "git",

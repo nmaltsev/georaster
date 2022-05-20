@@ -94,7 +94,9 @@ export default function parseData(data, debug) {
 
               result.projection = ProjectedCSTypeGeoKey || GeographicTypeGeoKey || data.metadata.projection
               if (debug) console.log('projection:', result.projection);
-
+              
+              result.gdalmetadata = image.getGDALMetadata();
+              
               result.height = height = image.getHeight();
               if (debug) console.log('result.height:', result.height);
               result.width = width = image.getWidth();
